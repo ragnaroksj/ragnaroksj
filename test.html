@@ -1,0 +1,34 @@
+<html>
+<script type="text/javascript">
+function solution ( A ) {
+    var a = new Array();
+    var result = new Array();
+    
+    for(var i = 0 ; i < A.length ; i++){
+        if(a[A[i]] == undefined) a[A[i]] = 0;
+        a[A[i]] += 1;
+        if(a[A[i]] >(A.length/2)){
+            result[A[i]] = A[i];
+        }
+    }
+    
+    if(result.length == 0){
+        return -1;
+    }else{
+           return result;
+    }
+
+   
+}
+
+window.onload= function(){    
+    var a =new Array(0,1,1,1,50,1);
+    alert(solution(a));
+}
+</script>
+
+<body>
+
+</body>
+
+</html>
