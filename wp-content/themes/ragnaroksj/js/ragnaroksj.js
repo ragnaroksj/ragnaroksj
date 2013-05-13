@@ -302,6 +302,7 @@ var ragnaroksj = {
 
 }
 
+
 jQuery(document).ready(function(){
 	var pageTypeArray = jQuery("body").attr("class").split(" ");
 	if(pageTypeArray[0] == "home"){	
