@@ -1,1 +1,1 @@
-require(["jquery-1.5.2.min","bgstretcher","jquery.cycle.all","music","ragnaroksj"],function(){"jQuery","jQuery"});
+require(["jquery-1.5.2.min","bgstretcher","jquery.cycle.all","music","ragnaroksj"],function(){"jquery"});
