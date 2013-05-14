@@ -21,12 +21,12 @@
 <?php wp_head(); ?>
 
 <link rel="stylesheet" href="<?php echo get_bloginfo("template_url");?>/bgstretcher.css" />
-<script type="text/javascript" src="<?php echo get_bloginfo("template_url")?>/js/jquery-1.5.2.min.js"></script>
-<script type="text/javascript" src="<?php echo get_bloginfo("template_url");?>/js/bgstretcher.js"></script>
-<script type="text/javascript" src="<?php echo get_bloginfo("template_url");?>/js/jquery.cycle.all.js" ></script>
-<script type="text/javascript" src="<?php echo get_bloginfo("template_url");?>/js/music.js"></script>
-<script type="text/javascript" src="<?php echo get_bloginfo("template_url");?>/js/ragnaroksj.js" ></script>
-<script data-main="script/main.js" src="<?php echo get_bloginfo("template_url");?>/js/require.js" ></script>
+<!--script type="text/javascript" src="<?php //echo get_bloginfo("template_url")?>/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="<?php //echo get_bloginfo("template_url");?>/js/bgstretcher.js"></script>
+<script type="text/javascript" src="<?php //echo get_bloginfo("template_url");?>/js/jquery.cycle.all.js" ></script>
+<script type="text/javascript" src="<?php //echo get_bloginfo("template_url");?>/js/music.js"></script>
+<script type="text/javascript" src="<?php //echo get_bloginfo("template_url");?>/js/ragnaroksj.js" ></script-->
+<script data-main="<?php echo get_template_directory_uri(); ?>/js/main" src="<?php echo get_bloginfo("template_url");?>/js/require.js" ></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -35,8 +35,7 @@
 		<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
 		<div class="nav">
 			<div><a href="<?php echo get_bloginfo("url") ?>">HOME</a></div>
-			<div><a href="<?php echo get_permalink(2); ?>" >VIDEO</a></div>
-			<div><a href="<?php echo get_permalink(184); ?>">ReBoot Javascript</a></div>
+			<div><a href="<?php echo get_permalink(2) ?>" >VIDEO</a></div>
 			<div><a href="<?php echo get_permalink(80) ?>" >PROFILE</a></div>
 		</div>
 	<div class="clear"></div>
