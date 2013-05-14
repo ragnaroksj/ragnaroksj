@@ -36,7 +36,7 @@
 		<div class="nav">
 			<div><a href="<?php echo get_bloginfo("url") ?>">HOME</a></div>
 			<div><a href="<?php echo get_permalink(2); ?>" >VIDEO</a></div>
-			<div><a href="<?php echo get_permalink(184); ?>">ReBoot Javascript</a></div>
+			<div><a href="<?php echo get_permalink(224); ?>">ReBoot Javascript</a></div>
 			<div><a href="<?php echo get_permalink(80) ?>" >PROFILE</a></div>
 		</div>
 	<div class="clear"></div>
