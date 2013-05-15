@@ -5,7 +5,7 @@
 			
 			<div id="left-item" class="page-1-<?php echo getTotalPage();?>-1">
 				<div class="item-frame" style="display:none">
-					<?php  query_posts(array('posts_per_page'=> 5, 'cat'=>'-2'));?>
+					<?php  query_posts(array('posts_per_page'=> 5, 'cat'=>'-2,-4,-6,-5'));?>
 					<?php if(have_posts()): $i = 0;?>
 					<?php while(have_posts()): the_post(); ?>
 						<?php 
