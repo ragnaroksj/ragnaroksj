@@ -1986,3 +1986,43 @@ body{
 body{
 	min-width:1300px;
 }
+
+.page-template-page-templatesre-boot-js-php{
+	background: #dedede;
+}
+
+.page-template-page-templatesre-boot-js-php .site-content{
+	background:#dedede;
+	padding:20px 45px 0 45px;
+	width:auto;
+}
+.page-template-page-templatesre-boot-js-php .site-content li{
+	margin-top:5px;
+}
+
+.page-template-page-templatesre-boot-js-php h1{
+	font-size:18px;
+}
+
+.single-post .wrapper{
+	padding-left:45px;
+}
+body.single-post{
+	background:#dedede;
+}
+.single-post #page{
+	background:#dedede;
+}
+.single-post .entry-title{
+	width:auto;
+	padding:10px 5px;
+	border-radius: 0 0 5px 5px;
+	background:#0099ff;
+	text-align:center;
+	text-transform:uppercase;
+	width:180px;
+	font-size:15px;
+}
+.entry-header{
+	margin-bottom:5px;
+}
