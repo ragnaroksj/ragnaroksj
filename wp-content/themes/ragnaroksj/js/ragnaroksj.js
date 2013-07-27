@@ -310,9 +310,9 @@ jQuery(document).ready(function(){
 		bgImage.src = "wp-content/themes/ragnaroksj/images/bg.jpg";
 		bgImage.onload = function(){
 			jQuery("body").bgStretcher({
-				images: ['wp-content/themes/ragnaroksj/images/bg.jpg'], 
-				imageWidth: 1024, 
-				imageHeight: 768, 
+				images: ['wp-content/themes/ragnaroksj/images/bg.jpg','wp-content/themes/ragnaroksj/images/bg2.jpg','wp-content/themes/ragnaroksj/images/bg3.jpg','wp-content/themes/ragnaroksj/images/bg4.jpg','wp-content/themes/ragnaroksj/images/bg5.jpg'], 
+				imageWidth: 2880, 
+				imageHeight: 1920, 
 				preloadImg: true,
 				callbackfunction: ragnaroksj.initialization()
 			});	
