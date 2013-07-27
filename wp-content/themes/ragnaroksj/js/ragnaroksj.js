@@ -63,6 +63,7 @@ var ragnaroksj = {
 				}).attr("class",jQuery(".article-"+articleId+"-item-"+itemNumber).attr("class")+" css-disabled");
 			});
 		});
+		jQuery("body").bgStretcher.pause();
 
 	},
 
@@ -148,7 +149,7 @@ var ragnaroksj = {
 				}).attr("class","item article-"+articleId+"-item-"+itemNumber);
 			});
 		});
-
+		jQuery("body").bgStretcher.play();
 		
 	},
 
@@ -314,6 +315,8 @@ jQuery(document).ready(function(){
 				imageWidth: 2880, 
 				imageHeight: 1920, 
 				preloadImg: true,
+				nextSlideDelay: 20000,
+				slideShowSpeed: 5000,
 				callbackfunction: ragnaroksj.initialization()
 			});	
 		}
