@@ -2030,18 +2030,18 @@ body.single-post{
 	margin-bottom:5px;
 }
 
-#navDot{
+.navDot{
 	position:relative;
 	float:left;
 	top:4px;
 	left:47px;
 
 }
-#navDot li{
+.navDot li{
 	display:inline-block;
 	list-style: none;
 	margin:0 10px 0 0;
 }
-#navDot li a{
+.navDot li a{
 	text-decoration: none;
 }

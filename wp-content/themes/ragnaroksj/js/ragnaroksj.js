@@ -90,11 +90,15 @@ var ragnaroksj = {
 			jQuery(".article-"+articleId+"-item-"+itemNumber+" .clear").animate({
 				'opacity' : 1
 			},800,function(){
-				jQuery('.content .img').after("<div id='navDot'></div>")
-				jQuery('.content .img').cycle({
+
+				if(jQuery("#navDot-"+articleId).attr("id") == undefined){
+					
+					jQuery(' .article-'+articleId+'-item-'+itemNumber+' .content .img').after("<div class='navDot' id='navDot-"+articleId+"'></div>")
+				}				
+				jQuery('.article-'+articleId+'-item-'+itemNumber+' .content .img').cycle({
 					fx: 'fade',
 					timeout : 8000,
-					pager: "#navDot",
+					pager: "#navDot-"+articleId,
 					pagerAnchorBuilder: function(idx, slide){
 						var s = idx > 2 ? ' style="display:none"' : '';
         				return '<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
@@ -131,9 +135,10 @@ return '<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
 			music.playMusic("#global-music");
 			if(ragnaroksj.muteFlag == 0){
 				music.volumeTransition("#global-music",1,5000);
-			}	
+			}
+			
 		});
-
+		jQuery("#navDot-"+articleId).remove();
 
 		
 	},
