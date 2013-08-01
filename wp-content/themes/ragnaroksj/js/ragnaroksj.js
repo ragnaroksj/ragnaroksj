@@ -90,9 +90,15 @@ var ragnaroksj = {
 			jQuery(".article-"+articleId+"-item-"+itemNumber+" .clear").animate({
 				'opacity' : 1
 			},800,function(){
+				jQuery('.content .img').after("<div id='navDot'></div>")
 				jQuery('.content .img').cycle({
 					fx: 'fade',
-					timeout : 8000 
+					timeout : 8000,
+					pager: "#navDot",
+					pagerAnchorBuilder: function(idx, slide){
+						var s = idx > 2 ? ' style="display:none"' : '';
+        				return '<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
+					} 
 				}).hover(function(){
 					jQuery(this).cycle("pause");
 				},function(){
@@ -102,6 +108,13 @@ var ragnaroksj = {
 
 		});
 	},
+
+	
+/*function pagerFactory(idx, slide) {
+var s = idx > 2 ? ' style="display:none"' : '';
+return '<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
+};*/
+
 
 	hideArticleDetails : function(articleId,itemNumber,blogType){
 

@@ -1661,7 +1661,7 @@ img#wpstats {
 
 #left-item .item{
 	clear:both;
-	background:rgba(255,255,255,0.3);
+	background:rgba(255,255,255,0.8);
 	padding:10px;
 	margin-bottom:13px;
 	color:#fff;
@@ -1679,7 +1679,7 @@ img#wpstats {
 }
 
 #left-item .item.css-disabled:hover{
-	background:rgba(255,255,255,0.3);
+	background:rgba(255,255,255,0.8);
 }
 
 #left-item .item:first-child{
@@ -1699,6 +1699,7 @@ img#wpstats {
 	font-size:33px;
 	font-family: proxima_novalight;
 	line-height: 68px;
+	color:#454545;
 }
 
 #left-item .title-excerpt .excerpt{
@@ -1733,6 +1734,8 @@ img#wpstats {
 .closeBtn{
 	float:right;
 	cursor:pointer;
+	color:#000;
+	font-size: 30px;
 }
 
 .title-excerpt{
@@ -1781,17 +1784,18 @@ img#wpstats {
 	width:55%;
 	line-height:22px;
 	height:100%;
-	color:#000;
+	color:#565656;
 }
 .content .intro p{
 	margin-bottom:25px;
 }
 .content .img{
-	height:100%;
+	height:96%;
 	margin:-20px 25px 0 25px;
 	overflow: hidden;
 	float:right;
-	width:40%;
+	width:39%;
+	border:2px inset #000;
 }
 .content .img img{
 	height:350px;
@@ -1923,7 +1927,6 @@ body{
 	padding:0 90px;
 	margin-top:20px;
 	background:#222;
-	box-shadow: 0px 0px 3px -1px #ccc;
 	height:0px;
 	overflow:hidden;
 }
@@ -2025,4 +2028,20 @@ body.single-post{
 }
 .entry-header{
 	margin-bottom:5px;
+}
+
+#navDot{
+	position:relative;
+	float:left;
+	top:4px;
+	left:47px;
+
+}
+#navDot li{
+	display:inline-block;
+	list-style: none;
+	margin:0 10px 0 0;
+}
+#navDot li a{
+	text-decoration: none;
 }
