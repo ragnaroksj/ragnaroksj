@@ -1923,7 +1923,7 @@ body{
 }
 
 .archive-video-frame{
-	width:100%;
+	width:auto;
 	padding:0 90px;
 	margin-top:20px;
 	background:#222;
