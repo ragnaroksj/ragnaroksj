@@ -1911,8 +1911,9 @@ body{
 }
 
 .archive-video{
-	clear:both;
 	width:320px;
+	float:left;
+	margin-right:50px;
 }
 
 .archive-video-img, .past-video-intro{
